@@ -1,3 +1,7 @@
 body {
     background-color: #CDC1FF;
 }
+weather-app {
+    background-color: #CDC1FF;
+    max-width: 40px
+}
