@@ -9,6 +9,8 @@ let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 function refreshWeather(response) {
+    console.log(response.data.condition.description);
+
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
@@ -34,8 +36,8 @@ function searchCity(city) {
 }
 
 function formatDate(date) {
-  let minutes = date.getMinutes();
-  let hours = date.getHours();
+  let minutes = String(date.getMinutes()).padStart(2, "0");
+  let hours = String(date.getHours()).padStart(2, "0");
   let days = [
     "Sunday",
     "Monday",
