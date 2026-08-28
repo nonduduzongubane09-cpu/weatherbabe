@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<<device-width>>, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Satisfy&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+            rel="stylesheet">
      <Link rel="stylesheet" href="src/index.css">   
         <title>weatherbabe</title>
 </head>
@@ -15,16 +20,21 @@
         </form>
     </header>
     <main>
-    <div>
-    <h1>Pietermaritzburg</h1>
-    <p>
+    <div class="weather-app-info">
+        <div>
+    <h1 class="weather-app-city">Pietermaritzburg</h1>
+    <p class="weather-app-details">
         Thursday 10:00 , Sunny
         <br/>
-        Humidity: 60% , wind: 2 km/h
+        Humidity:<strong> 60% </strong>, wind:<strong> 2 km/h</strong>
     </p>
     </div>
-    <div>
-       ☀️ 32°C
+    <div class="weather-app-temperature-container">
+        <div  class="weather-app-icon">☀️</div>
+       <div class="weather-app-temperature">32</div>
+       <div class="weather-app-unit">
+        <a href="#" class="active">°C</a> | <a href="#">°F</a>
+    </div>
     </div>
     </main>
 
